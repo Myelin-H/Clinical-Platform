@@ -208,8 +208,8 @@ def data_read():
                     #montage=raw_data.get_montage()
                     #epochs_data.set_montage(montage)
                     #info=epochs_data.info
-                    epochs_h=mne.read_epochs("epochs_h.fif")
-                    epochs_p=mne.read_epochs("epochs_p.fif") 
+                    epochs_h=mne.read_epochs("epochs_h1.fif", preload=True)
+                    epochs_p=mne.read_epochs("epochs_p1.fif", preload=True) 
                         
                     
                     st.header("Digital Biomarkers Extraction")
