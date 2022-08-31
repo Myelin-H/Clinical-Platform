@@ -1,7 +1,5 @@
 import streamlit as st
-import Image
-img= Image.open('logo-high-res.png')
-st.set_page_config(page_title="BodyMirror-Platform", page_icon=img)
+
 from  streamlit.legacy_caching.hashing import _CodeHasher
 
 from streamlit.scriptrunner import get_script_run_ctx as get_report_ctx
@@ -56,7 +54,10 @@ import json
 import extra_streamlit_components as stx
 
 import read_data
+from PIL import Image
+img= Image.open('logo-high-res.png')
 
+st.set_page_config(page_title="BodyMirror", page_icon=img)
 
 
 config = {
