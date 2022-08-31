@@ -1,5 +1,5 @@
 import streamlit as st
-from PIL import Image
+import Image
 img= Image.open('logo-high-res.png')
 st.set_page_config(page_title="BodyMirror-Platform", page_icon=img)
 from  streamlit.legacy_caching.hashing import _CodeHasher
