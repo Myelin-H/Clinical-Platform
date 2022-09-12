@@ -7,7 +7,7 @@ from streamlit.legacy_caching.hashing import _CodeHasher
 
 import warnings
 import matplotlib.pyplot as plt
-import seaborn as sns
+
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
@@ -21,10 +21,9 @@ from sklearn.metrics import confusion_matrix
 import sys, os, os.path
 from fpdf import FPDF
 import base64
-sys.path.append('/BodyMirror')
+
 import numpy as np
-import BodyMirror
-print('Welcome to BodyMirror version {}'.format(BodyMirror.version.__version__))
+
 import joblib
 import streamlit as st
 import pandas as pd
@@ -38,10 +37,9 @@ from io import BytesIO
 import sys, os, os.path
 import pyvista as pv
 from pyvistaqt import BackgroundPlotter
-sys.path.append('/BodyMirror')
+
 import numpy as np
-import BodyMirror
-print ('Welcome to BodyMirror version {}'.format (BodyMirror.version.__version__))
+
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from sklearn.utils import shuffle
