@@ -39,8 +39,8 @@ from pylab import rcParams
 #import visualization
 from PIL import Image
 import base64
-import mpld3
-from mpld3 import plugins
+#import mpld3
+#from mpld3 import plugins
 #import matplotlib.pyplot as mpld3
 import streamlit.components.v1 as components
 
