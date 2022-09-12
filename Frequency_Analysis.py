@@ -35,8 +35,8 @@ import scipy.linalg as la
 from io import BytesIO
 
 import sys, os, os.path
-import pyvista as pv
-from pyvistaqt import BackgroundPlotter
+#import pyvista as pv
+#from pyvistaqt import BackgroundPlotter
 
 import numpy as np
 
