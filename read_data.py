@@ -110,9 +110,9 @@ from sklearn.pipeline import Pipeline
 #import login_app
 #import visualization
 from PIL import Image
-import base64
-import mpld3
-from mpld3 import plugins
+#import base64
+#import mpld3
+#from mpld3 import plugins
 #import matplotlib.pyplot as mpld3
 import streamlit.components.v1 as components
 from mne.datasets import sample
@@ -130,8 +130,8 @@ import matplotlib.animation as animation
 #import visualization
 from PIL import Image
 import base64
-import mpld3
-from mpld3 import plugins
+#import mpld3
+#from mpld3 import plugins
 #import matplotlib.pyplot as mpld3
 import streamlit.components.v1 as components
 
