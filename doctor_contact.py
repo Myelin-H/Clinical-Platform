@@ -1,4 +1,4 @@
-import pygds as g
+
 import os
 import numpy as np
 from twilio.rest import Client
@@ -13,10 +13,6 @@ from sklearn.model_selection import cross_validate
 from datetime import datetime
 import streamlit as st
 import time
-import pyrebase
-import json
-from firebase import firebase
-from getpass import getpass
 from time import sleep
 import streamlit as st
 import codecs, json
@@ -34,9 +30,6 @@ config = {
   "databaseURL": "https://myelin-h-authentification-default-rtdb.europe-west1.firebasedatabase.app/"
 }
 
-firebase = pyrebase.initialize_app(config)
-db=firebase.database()
-
 
 
 
@@ -44,8 +37,8 @@ db=firebase.database()
 def doctor_contact_func():
     button1=st.button('Contact Your Doctor')
     if button1==True:
-        user_info = db.child("bodymirror-users").child("connected-users").get()
-        doctor_email=user_info.each()[1].val()
+        #user_info = db.child("bodymirror-users").child("connected-users").get()
+        doctor_email="info@myelinh.com"
         #st.write(doctor_email)
         client = Courier(auth_token="pk_prod_KMJJ8SEJJ943DJJDZGS9YZK5D2ZG")
         resp = client.send_message(
