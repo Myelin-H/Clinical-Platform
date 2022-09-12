@@ -3,10 +3,7 @@ import streamlit as st
 from streamlit.legacy_caching.hashing import _CodeHasher
 
 # Get a reference to the auth service
-import pyrebase
-import json
-from firebase import firebase
-from getpass import getpass
+
 
 import warnings
 import matplotlib.pyplot as plt
@@ -32,7 +29,7 @@ import joblib
 import streamlit as st
 import pandas as pd
 import numpy as np
-from google.cloud import storage
+
 import pickle
 from sklearn.ensemble import RandomForestClassifier
 import scipy.linalg as la
@@ -92,8 +89,8 @@ rcParams['figure.figsize'] = 12, 8
 #import visualization
 from PIL import Image
 import base64
-import mpld3
-from mpld3 import plugins
+#import mpld3
+#from mpld3 import plugins
 #import matplotlib.pyplot as mpld3
 import streamlit.components.v1 as components
 
