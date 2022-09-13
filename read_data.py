@@ -248,7 +248,8 @@ def data_read():
                             #montage=raw_data.get_montage()
                             #epochs_data.set_montage(montage)
                             #info1=epochs_data1.info
-                            epochs_h=mne.read_epochs("epochs_h.fif")
+                            epochs_h= mne.read_epochs(fname="epochs_h1.fif", preload=True)
+                            #epochs_h=mne.read_epochs("epochs_h.fif")
                             tab14, tab24, tab34, tab54 = st.tabs([ "Time-Analysis", "Frequency-Analysis", "Time-Frequency", "Source-Localization"])     
                             with tab14:
                                 import Time_Analysis
@@ -264,8 +265,10 @@ def data_read():
 
                                 import Source_Localization
                         else:
-                            epochs_h=mne.read_epochs("epochs_h.fif")
-                            epochs_p=mne.read_epochs("epochs_p.fif") 
+                            epochs_h= mne.read_epochs(fname="epochs_h1.fif", preload=True)
+                            epochs_p= mne.read_epochs(fname="epochs_p1.fif", preload=True)
+                            #epochs_h=mne.read_epochs("epochs_h.fif")
+                            #epochs_p=mne.read_epochs("epochs_p.fif") 
                             #epochs_data1=epochs_data
                             #info1=info 
 
