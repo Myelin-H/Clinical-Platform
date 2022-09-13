@@ -124,8 +124,7 @@ def time_analysis_p(epochs_p):
         #st.video(anim_c3)
         #anim_c3.save(r'Animation1.mp4')
         #HtmlFile = anim_c3.to_html5_video()
-        with open("myvideo.html","w") as f:
-            print(anim_c3.to_html5_video(), file=f)
+        components.html(anim_c3.to_jshtml(), height=1000)
 
         HtmlFile = open("myvideo.html", "r")
         #HtmlFile="myvideo.html"
